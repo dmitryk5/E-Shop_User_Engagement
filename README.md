@@ -7,7 +7,24 @@
 https://public.tableau.com/app/profile/dmitry.kuvyrdin/viz/E-ShopUserEngagementPurchaseIntent-InteractiveDashboard/Dashboard1?publish=yes
 
 📂 **SQL Queries:**  
-./sql
+All SQL queries are organized to reflect the analytical workflow, from raw data preparation to funnel and product-level insights.
+
+* [`1_clean.sql`](./sql/1_clean.sql)  
+  Data cleaning and standardization.  
+  Creates a clean base table by normalizing dates, renaming columns, and decoding categorical ID fields (country, product category, color, image placement, pricing indicators).
+
+* [`2_session_metrics.sql`](./sql/2_session_metrics.sql)  
+  Session-level aggregation.  
+  Transforms event-level data into session-level engagement metrics, including product views, unique products viewed, price exposure, and navigation depth.
+
+* [`3_funnel_flags.sql`](./sql/3_funnel_flags.sql)  
+  Funnel construction and purchase intent classification.  
+  Defines behavioral funnel stages (viewed product, deep browsing, high intent) using engagement thresholds and a dynamic price percentile.
+
+* [`4_product_metrics.sql`](./sql/4_product_metrics.sql)  
+  Product-level performance metrics.  
+  Combines session-level intent signals with product views to identify items that generate high purchase intent, not just high traffic.
+
 
 ---
 
