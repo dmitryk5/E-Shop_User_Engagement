@@ -137,6 +137,7 @@ The Tableau dashboard provides an interactive overview of user engagement and pu
 
 ### Author
 **Dmitry Kuvyrdin**  
+
 🔗 Tableau Public Profile: https://public.tableau.com/app/profile/dmitry.kuvyrdin
 
 🔗 LinkedIn: https://www.linkedin.com/in/dmitry-kuvyrdin/
