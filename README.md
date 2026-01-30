@@ -5,7 +5,7 @@ This project demonstrates a product analytics approach to understanding user eng
 ![Dashboard Preview](e-shop_dashboard.png)
 
 🔗 **Interactive Tableau Dashboard:**  
-https://public.tableau.com/app/profile/dmitry.kuvyrdin/viz/E-ShopUserEngagementPurchaseIntent-InteractiveDashboard/Dashboard1?publish=yes
+[Link to Dashboard](https://public.tableau.com/app/profile/dmitry.kuvyrdin/viz/E-ShopUserEngagementPurchaseIntent/Dashboard1?publish=yes)
 
 📂 **SQL Queries:**  
 All SQL queries are organized to reflect the analytical workflow, from raw data preparation to funnel and product-level insights.
@@ -95,7 +95,7 @@ The Tableau dashboard provides an interactive overview of user engagement and pu
   * High-intent views by main product category
 
 🔗 **Interactive Dashboard:**  
-https://public.tableau.com/app/profile/dmitry.kuvyrdin/viz/E-ShopUserEngagementPurchaseIntent-InteractiveDashboard/Dashboard1?publish=yes
+[Link to Dashboard](https://public.tableau.com/app/profile/dmitry.kuvyrdin/viz/E-ShopUserEngagementPurchaseIntent/Dashboard1?publish=yes)
 
 ---
 
