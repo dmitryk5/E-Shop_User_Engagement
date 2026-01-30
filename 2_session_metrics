@@ -1,0 +1,50 @@
+-- =====================================================
+-- 02. Session-Level Aggregation
+-- =====================================================
+-- Objective:
+-- Aggregate event-level data into session-level metrics
+-- to support funnel analysis, engagement classification,
+-- and purchase-intent modeling.
+--
+-- Rationale:
+-- User behavior is analyzed primarily at the session level.
+-- This table consolidates multiple product views within
+-- a session into a single analytical record.
+-- =====================================================
+
+
+-- -----------------------------------------------------
+-- Step 1: Build session-level metrics table
+-- -----------------------------------------------------
+-- Each row represents one session.
+-- Metrics capture both engagement depth and price exposure.
+
+CREATE TABLE session_metrics AS
+SELECT
+    session_id,
+    country,
+
+    -- Engagement volume
+    COUNT(*) AS product_views,
+
+    -- Breadth of product exploration
+    COUNT(DISTINCT unique_product_code) AS unique_products_viewed,
+
+    -- Price exposure within the session
+    ROUND(AVG(price)::numeric, 2) AS avg_price_viewed,
+    MAX(price) AS max_price_viewed,
+
+    -- Navigation depth proxy
+    MAX(page_number) AS max_page_number
+FROM e_shop_base
+GROUP BY session_id, country;
+
+
+-- -----------------------------------------------------
+-- Step 2: Validate session-level aggregation
+-- -----------------------------------------------------
+-- Confirm that each session appears once and that
+-- aggregated metrics align with expectations.
+
+SELECT *
+FROM session_metrics;
