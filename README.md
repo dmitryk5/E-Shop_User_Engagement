@@ -138,3 +138,4 @@ https://public.tableau.com/app/profile/dmitry.kuvyrdin/viz/E-ShopUserEngagementP
 ### Author
 **Dmitry Kuvyrdin**  
 🔗 Tableau Public Profile: https://public.tableau.com/app/profile/dmitry.kuvyrdin
+🔗 LinkedIn: https://www.linkedin.com/in/dmitry-kuvyrdin/
