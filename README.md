@@ -1,5 +1,6 @@
 # 🛍️ E-Shop User Engagement & Purchase Intent Analysis
 **SQL + Tableau Dashboard Project**
+This project demonstrates a product analytics approach to understanding user engagement and purchase intent in an e-commerce environment.
 
 ![Dashboard Preview](e-shop_dashboard.png)
 
@@ -31,7 +32,7 @@ All SQL queries are organized to reflect the analytical workflow, from raw data 
 ## 1. Project Overview
 
 This project analyzes **consumer viewing and buying behavior** for an online clothing e-shop using SQL and Tableau.  
-The objective is to understand how users progress from casual browsing to high-purchase intent, identify product and geographic trends, and surface opportunities to improve conversion.
+The objective is to understand how users progress from casual browsing to inferred purchase intent, identify product and geographic trends, and surface opportunities to improve conversion.
 
 The analysis reflects a **product analytics workflow**, moving from raw event-level data to actionable business insights.
 
@@ -52,10 +53,11 @@ The dataset is based on real e-commerce behavioral research:
 * Product categories and identifiers
 * User geographic location
 * Purchase-intent proxy variables (e.g., deep browsing, repeated views)
+* The dataset does not contain confirmed purchase events; intent is inferred from behavioral signals.
 
 ---
 
-## 3. Queries and Questions
+## 3. Analytical Questions
 
 SQL was used to transform raw event data into analytical tables that support funnel and intent analysis.
 
@@ -70,10 +72,6 @@ SQL was used to transform raw event data into analytical tables that support fun
 * Window functions
 * Conditional aggregation
 * Multi-table joins
-
-📂 **View all SQL queries:**  
-./sql
-
 ---
 
 ## 4. Analysis and Dashboard
@@ -87,6 +85,8 @@ The Tableau dashboard provides an interactive overview of user engagement and pu
   * High Intent Rate
 * **Viewer Funnel**
   * Page View → Product View → Deep Browsing → High Intent
+  * Deep Browsing is defined as sessions with sustained product exploration.
+  * High Intent is defined using engagement depth combined with exposure to higher-priced products.
 * **Top Products**
   * Ranked by high-intent views
 * **Geographic Distribution**
