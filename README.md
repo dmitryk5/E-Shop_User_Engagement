@@ -1,7 +1,7 @@
 # 🛍️ E-Shop User Engagement & Purchase Intent Analysis
 **SQL + Tableau Dashboard Project**
 
-![Dashboard Preview](dashboard_preview.png)
+![Dashboard Preview](e-shop_dashboard.png)
 
 🔗 **Interactive Tableau Dashboard:**  
 https://public.tableau.com/app/profile/dmitry.kuvyrdin/viz/E-ShopUserEngagementPurchaseIntent-InteractiveDashboard/Dashboard1?publish=yes
